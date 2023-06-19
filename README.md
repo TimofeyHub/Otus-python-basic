@@ -8,4 +8,4 @@ Python Developer Basic
 
 ## Выполняет
 
-Могутов Тимофей, QA МТС Big Data
+Могутов Тимофей, QA
