@@ -16,7 +16,7 @@ def check_integer_type(
 def is_prime(
         num: int,
 ) -> bool:
-    if num in (0, 1,):
+    if num <= 1:
         return False
 
     possible_denominator = range(2, num)
