@@ -16,7 +16,7 @@ class LowFuelError(Exception):
 
 class NotEnoughFuel(Exception):
     def __init__(self, need_fuel: int):
-        self.need_fuel = need_fuel
+        self.need_fuel = abs(need_fuel)
 
     def __str__(self):
         return f"Для преодоления указанной дистанции необходимо ещё {self.need_fuel} л топлива."
@@ -24,7 +24,7 @@ class NotEnoughFuel(Exception):
 
 class CargoOverload(Exception):
     def __init__(self, overload_weight: int):
-        self.overload_weght = overload_weight
+        self.overload_weight = abs(overload_weight)
 
     def __str__(self):
-        return f"Перегруз {self.overload_weght} кг ."
+        return f"Перегруз {self.overload_weight} кг ."

@@ -9,9 +9,9 @@ from homework_02.engine import Engine
 class Car(Vehicle):
     def __init__(
             self,
-            weight,
-            fuel,
-            fuel_consumption,
+            weight: int,
+            fuel: int,
+            fuel_consumption: int,
     ):
         super().__init__(weight, fuel, fuel_consumption)
         self._engine = None
@@ -20,5 +20,5 @@ class Car(Vehicle):
     def engine(self):
         return self._engine
 
-    def set_engine(self, engine: Engine):
+    def set_engine(self, engine: Engine) -> None:
         self._engine = engine
