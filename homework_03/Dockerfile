@@ -1,3 +1,6 @@
+# команда для запуска контейнера
+# docker run -p 8080:8000 -it homework
+
 FROM python:3.10.12-bookworm
 
 WORKDIR /homework_03
