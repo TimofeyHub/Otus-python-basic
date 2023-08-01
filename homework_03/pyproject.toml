@@ -5,7 +5,6 @@ description = "Homework 03. Mogutov Timofey"
 authors = ["TimofeyHub <timatofey@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "homework_03"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
