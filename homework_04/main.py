@@ -51,8 +51,6 @@ async def async_main():
         await add_users(session, users_data)
         await add_posts(session, posts_data)
 
-    await async_engine.dispose()
-
 
 def main():
     asyncio.run(async_main())
